@@ -63,11 +63,11 @@ const ShowTeachers = () => {
 
     const rows = teachersList.map((teacher) => {
         return {
-            name: teacher.name,
-            teachSubject: teacher.teachSubject?.subName || null,
-            teachSclass: teacher.teachSclass.sclassName,
-            teachSclassID: teacher.teachSclass._id,
-            id: teacher._id,
+            name: teacher?.name,
+            teachSubject: teacher?.teachSubject?.subName || null,
+            teachSclass: teacher?.teachSclass?.sclassName,
+            teachSclassID: teacher?.teachSclass?._id,
+            id: teacher?._id,
         };
     });
 

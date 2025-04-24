@@ -52,8 +52,8 @@ const ShowSubjects = () => {
         return {
             subName: subject.subName,
             sessions: subject.sessions,
-            sclassName: subject.sclassName.sclassName,
-            sclassID: subject.sclassName._id,
+            sclassName: subject?.sclassName?.sclassName,
+            sclassID: subject?.sclassName?._id,
             id: subject._id,
         };
     })
